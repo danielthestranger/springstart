@@ -1,0 +1,17 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Getting Started: Serving Web Content</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+</head>
+<body>
+
+<div>
+    <span th:each="greeting : ${greetings}"
+          th:text="|${greeting.message} |"
+        th:style="|color: rgb(${greeting.redValue},${greeting.greenValue},${greeting.blueValue}); font-size: ${greeting.fontSizePercent}%;|">
+
+    </span>
+</div>
+</body>
+</html>

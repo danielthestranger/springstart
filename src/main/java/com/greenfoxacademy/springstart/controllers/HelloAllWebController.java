@@ -37,7 +37,7 @@ public class HelloAllWebController {
             redValue = getRandomInt(0, 255);
             greenValue = getRandomInt(0, 255);
             blueValue = getRandomInt(0, 255);
-            fontSizePercent = getRandomInt(20, 250);
+            fontSizePercent = getRandomInt(50, 300);
 
             formattedGreetings.add(new FormattedGreetingDTO(hello, redValue, greenValue, blueValue, fontSizePercent));
         }

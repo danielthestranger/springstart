@@ -12,7 +12,6 @@ import java.util.concurrent.atomic.AtomicLong;
 public class HelloWebController {
     private AtomicLong helloWebRequestCounter = new AtomicLong(0);
 
-
     @RequestMapping(value = "/web/greeting", method = RequestMethod.GET)
     public String greeting(@RequestParam(value = "name", defaultValue = "World") String name, Model model) {
         helloWebRequestCounter.addAndGet(1);

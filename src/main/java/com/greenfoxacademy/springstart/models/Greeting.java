@@ -1,5 +1,7 @@
 package com.greenfoxacademy.springstart.models;
 
+import org.springframework.ui.Model;
+
 public class Greeting {
     private long id;
     private String content;
